@@ -6,10 +6,13 @@ def primary():
   quotes = f.readlines()
   f.close()
 
-  last = 13
-  rnd = random.randint(0, last)
+  last = 14
+  rnd1 = random.randint(0, last)
+  rnd2 = random.randint(0, last)
+  mix = quotes[rnd1] + quotes[rnd2]
   
-  print(quotes[rnd])
+  print(mix)
+ 
 
 if __name__== "__main__":
   primary()
